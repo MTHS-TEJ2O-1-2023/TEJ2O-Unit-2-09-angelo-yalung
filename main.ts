@@ -20,13 +20,13 @@ input.onButtonPressed(Button.B, function () {
   basic.showNumber(score)
 })
 
-input.onGesture(Gesture.Shake, function() {
+input.onGesture(Gesture.Shake, function () {
   // the dice roll
   randomNumber = randint(1, 3)
   basic.clearScreen()
 
   // rock
-    if (randomNumber === 1) {
+  if (randomNumber === 1) {
     basic.showLeds(`
   . . . . .
   . # # # .
@@ -38,7 +38,7 @@ input.onGesture(Gesture.Shake, function() {
   }
 
   // paper
-    if (randomNumber === 2) {
+  if (randomNumber === 2) {
     basic.showLeds(`
   # # # # #
   # . . . #
@@ -50,7 +50,7 @@ input.onGesture(Gesture.Shake, function() {
   }
 
   // scissors
-    if (randomNumber === 3) {
+  if (randomNumber === 3) {
     basic.showLeds(`
   # # . . .
   # # . # #
