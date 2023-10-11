@@ -2,7 +2,7 @@
  *
  * Created by: Angelo Yalung
  * Created on: Oct 2023
- * This program does rock paper scissors, keeps the score and wipes the score 
+ * This program does rock paper scissors, keeps the score and wipes the score
 */
 
 // variables
