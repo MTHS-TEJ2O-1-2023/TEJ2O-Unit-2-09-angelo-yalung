@@ -13,19 +13,19 @@ let randomNumber: number
 let score: number = 0
 
 input.onButtonPressed(Button.A, function () {
-    score = score + 1
+  score = score + 1
 })
 
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(score)
+  basic.showNumber(score)
 })
 
 input.onGesture(Gesture.Shake, function () {
   // the dice roll
-    randomNumber = randint(1, 3)
+  randomNumber = randint(1, 3)
   basic.clearScreen()
   // rock
-  if (randomNumber === 1) {
+    if (randomNumber === 1) {
     basic.showLeds(`
   . . . . .
   . # # # .
@@ -36,7 +36,7 @@ input.onGesture(Gesture.Shake, function () {
   basic.pause(1000)
   }
   // paper
-  if (randomNumber === 2) {
+    if (randomNumber === 2) {
     basic.showLeds(`
   # # # # #
   # . . . #
@@ -47,7 +47,7 @@ input.onGesture(Gesture.Shake, function () {
   basic.pause(1000)
   }
   // scissors
-  if (randomNumber === 3) {
+    if (randomNumber === 3) {
     basic.showLeds(`
   # # . . .
   # # . # #
