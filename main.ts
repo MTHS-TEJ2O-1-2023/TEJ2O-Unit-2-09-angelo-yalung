@@ -12,11 +12,9 @@ let score: number = 0
 input.onButtonPressed(Button.A, function () {
   score = score + 1
 })
-
 input.onButtonPressed(Button.B, function () {
   basic.showNumber(score)
 })
-
 input.onGesture(Gesture.Shake, function () {
   // the dice roll
   randomNumber = randint(1, 3)
