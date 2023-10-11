@@ -2,7 +2,7 @@
  *
  * Created by: Angelo Yalung
  * Created on: Oct 2023
- * This program does rock paper cissors, keeps the score and wipes the score 
+ * This program does rock paper scissors, keeps the score and wipes the score 
 */
 
 basic.clearScreen()
@@ -20,45 +20,44 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(score)
 })
 
-
 input.onGesture(Gesture.Shake, function() {
   // the dice roll
-    randomNumber = randint(1,3)
-    basic.clearScreen()
+  randomNumber = randint(1,3)
+  basic.clearScreen()
 
   // rock
-    if (randomNumber === 1) {
-    basic.showLeds(`
-    . . . . .
-    . # # # .
-    . # # # .
-    . # # # .
-    . . . . .
-    `)
+  if (randomNumber === 1) {
+  basic.showLeds(`
+  . . . . .
+  . # # # .
+  . # # # .
+  . # # # .
+  . . . . .
+  `)
   basic.pause(1000)
   }
 
   // paper
-    if (randomNumber === 2) {
-    basic.showLeds(`
-    # # # # #
-    # . . . #
-    # . . . #
-    # . . . #
-    # # # # #
-    `)
+  if (randomNumber === 2) {
+  basic.showLeds(`
+  # # # # #
+  # . . . #
+  # . . . #
+  # . . . #
+  # # # # #
+  `)
   basic.pause(1000)
   }
 
   // scissors
-    if (randomNumber === 3) {
-    basic.showLeds(`
-    # # . . .
-    # # . # #
-    . # # # .
-    # # . # #
-    # # . . .
-    `)
+  if (randomNumber === 3) {
+  basic.showLeds(`
+  # # . . .
+  # # . # #
+  . # # # .
+  # # . # #
+  # # . . .
+  `)
   basic.pause(1000)
   }
 })
