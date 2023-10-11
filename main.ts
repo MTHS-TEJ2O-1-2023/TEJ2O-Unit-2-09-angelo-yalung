@@ -5,9 +5,6 @@
  * This program does rock paper scissors, keeps the score and wipes the score 
 */
 
-basic.clearScreen()
-basic.pause(1000)
-
 // variables
 let randomNumber: number
 let score: number = 0
