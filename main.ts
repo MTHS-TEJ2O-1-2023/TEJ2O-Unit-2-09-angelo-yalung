@@ -25,7 +25,7 @@ input.onGesture(Gesture.Shake, function () {
   randomNumber = randint(1, 3)
   basic.clearScreen()
   // rock
-    if (randomNumber === 1) {
+  if (randomNumber === 1) {
     basic.showLeds(`
   . . . . .
   . # # # .
@@ -33,10 +33,10 @@ input.onGesture(Gesture.Shake, function () {
   . # # # .
   . . . . .
   `)
-  basic.pause(1000)
+    basic.pause(1000)
   }
   // paper
-    if (randomNumber === 2) {
+  if (randomNumber === 2) {
     basic.showLeds(`
   # # # # #
   # . . . #
@@ -44,10 +44,10 @@ input.onGesture(Gesture.Shake, function () {
   # . . . #
   # # # # #
   `)
-  basic.pause(1000)
+    basic.pause(1000)
   }
   // scissors
-    if (randomNumber === 3) {
+  if (randomNumber === 3) {
     basic.showLeds(`
   # # . . .
   # # . # #
@@ -55,6 +55,6 @@ input.onGesture(Gesture.Shake, function () {
   # # . # #
   # # . . .
   `)
-  basic.pause(1000)
+    basic.pause(1000)
   }
 })
